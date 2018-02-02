@@ -34,7 +34,6 @@ class EmployeeList extends Component {
           <Picker
             selectedValue={this.props.shift}
             onValueChange={day => this.props.employeeUpdate({ prop: 'shift', value: day })}
-            style={{ flex: 1 }}
           >
             <Picker.Item label="Monday" value="Monday" />
             <Picker.Item label="Tuesday" value="Tuesday" />
@@ -51,6 +50,7 @@ class EmployeeList extends Component {
             Save
           </Button>
         </CardSection>
+
       </Card>
     );
   }
